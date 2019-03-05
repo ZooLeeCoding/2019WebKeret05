@@ -7,19 +7,30 @@ import { MyFirsztComponent } from './my-firszt/my-firszt.component';
 import { MySecondComponent } from './my-second/my-second.component';
 import { MainComponent } from './main/main.component';
 
-import {AppRoutingModule} from './app.routing.module';
+import { AppRoutingModule } from './app.routing.module';
+import { MaterialModule } from './material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserAnimationsModule } from
+  '@angular/platform-browser/animations';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyFirsztComponent,
     MySecondComponent,
-    MainComponent
+    MainComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
